@@ -5,6 +5,7 @@ import { Home } from "./components/Pages/Home";
 import { Line } from 'react-chartjs-2'
 
 
+
 const data = {
       labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
       datasets: [{
@@ -57,6 +58,7 @@ const options = {
   },
 };
 
+
 function App() {
   return (
     <>
@@ -74,6 +76,18 @@ function App() {
       <div className="chart">
         <h2>Kelompok 10</h2>
       <Line data={data} option={options}/>
+       </div>
+
+
+       <div className="Ph sensor">
+       <div class="col-md-6">
+        <div class="progress blue"> <span class="progress-left"> <span class="progress-bar"></span>
+         </span> <span class="progress-right"> <span class="progress-bar"></span> </span>
+            <div class="progress-value">PH Sensor</div>
+        </div>
+       
+    </div>
+    
        </div>
 
     </>
